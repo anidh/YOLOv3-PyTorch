@@ -1,0 +1,5 @@
+# Weight Files
+*.weights
+
+#pycache
+__pycache__
