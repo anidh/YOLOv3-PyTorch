@@ -20,11 +20,11 @@ YOLO_JSON IPython notebook
 ```
 This will take all the images from the image directory and then create a TXT file with bbox coordinates for each image in the gt_annotations folder. The format of the GT TXT file will be - class_name left top right bottom
 
-## Download YOLOv3 Weights
+## Download YOLOv3 Weights for Open Images dataset
 
 Download the weights using the following command
 ```sh
-wget -O yolov3.weights https://pjreddie.com/media/files/yolov3.weights
+wget -O yolov3.weights https://pjreddie.com/media/files/yolov3-openimages.weights
 ```
 ## Running Detection on Images
 

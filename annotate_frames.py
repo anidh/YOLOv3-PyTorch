@@ -12,10 +12,10 @@ import math
 import os
 
 class Detection:
-    cfgfile = "./cfg/yolov3.cfg"
-    weightsfile = "yolov3.weights"
-    classes = load_classes('./data/coco.names')
-    num_classes = 80
+    cfgfile = "./cfg/yolov3-openimages.cfg"
+    weightsfile = "yolov3-openimages.weights"
+    classes = load_classes('./data/openimages.names')
+    num_classes = 600
     bbox_attrs = 5 + num_classes
     args = None
     confidence = None
