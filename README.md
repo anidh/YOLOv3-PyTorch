@@ -14,12 +14,11 @@ This repository is built upon [Ayoosh Kathuria's](https://github.com/ayooshkathu
 
 ## Convert bbox-annotations to txt format
 
-We can covert the given bbox-annotations.json format file to TXT format which will have annotations for all the GT images to do that we can run the command
+We can covert the given bbox-annotations.json format file to TXT format which will have annotations for all the GT images to do that we can run the 
 ```sh
 YOLO_JSON IPython notebook
 ```
-This will take all the images from the image directory and then create a TXT file with bbox coordinates for each image in the gt_annotations folder. The format of the GT TXT file will be
-<class_name> <left> <top> <right> <bottom>
+This will take all the images from the image directory and then create a TXT file with bbox coordinates for each image in the gt_annotations folder. The format of the GT TXT file will be - class_name left top right bottom
 
 ## Download YOLOv3 Weights
 
@@ -42,8 +41,7 @@ Hold on, there are some command line arguments you can utilize
 * --skip - To skip every alternate frame or not, for faster processing speed
 * --path - path to the images folder
 
-This will take all the images from the image directory and then run YOLO v3 algorithm on it. The resultant bbox coordinate for each image will be stored in the TXT file in images directory. The format in the TXT file will be
-<class_name> <confidence> <left> <top> <right> <bottom>
+This will take all the images from the image directory and then run YOLO v3 algorithm on it. The resultant bbox coordinate for each image will be stored in the TXT file in images directory. The format in the TXT file will be - class_name confidence left top right bottom
 
 ## Calculating the mAP score
 
@@ -53,4 +51,4 @@ This will take all the images from the image directory and then run YOLO v3 algo
  ```sh
 python3 main.py
 ```
-This will output the mAP scores for the two classes.
+This will output the mAP scores for the two classes and also save the result in the mAP\output folder.
